@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/App.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+</head>
+<body>
+    <div class="top-header">
+        <div class="container">
+            <ul class="top-header-nav">
+                <li class="chooseCity" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-map-marker-alt"></i> Ваш город</li>
+                <li><i class="far fa-clock"></i> Пн-Пт 9:00 – 18:00</li>
+                <li class="top-mail"><a href="mailto:info@metaloprokat.kz"><i class="far fa-envelope"></i> info@metaloprokat.kz</a></li>
+                <li class="top-phone"><a href="tel:+78000040480"><i class="fas fa-phone"></i> +7 800 004-04-80</a></li>
+                <div class="mode-toggle">
+                    <div class="toggle-container">
+                        <input type="checkbox" id="switch" name="theme" onclick="toggleMode()">
+                        <label for="switch">Toggle</label>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <span class="navbar-brand">
+                <a href="index.html">
+                    <div class="logoAnimated">
+                        <div class="animLogo"><img alt="image" src="images/logo_before.png" class="thumb logoIcon"></div>
+                        <img alt="image" src="images/logo_after.png" class="thumb logoText">
+                    </div>
+                </a>
+                </span>
+                <div class="container">
+                <div class="row">
+                    <button aria-controls="responsive-navbar-nav" type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed"><span class="navbar-toggler-icon"></span></button>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <form class="form-inline"><input placeholder="Поиск" type="text" class="mr-sm-2 form-control"><button type="submit" class="btn btn-primary">Поиск</button></form>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-6">
+                        <div class="row">
+                            <ul class="headUlLi">
+                            <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal1"><i class="fas fa-map-marker-alt"></i> Обратный звонок</a></li>
+                            <li><a href=""><i class="fas fa-map-marker-alt"></i> Прайс листы</a></li>
+                            <li><a href="mailto:info@metaloprokat.kz"><i class="far fa-envelope"></i> info@metaloprokat.kz</a></li>
+                            <li><a href="calc.html"><i class="fas fa-calculator"></i> Калькулятор</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <ul class="socialMedia">
+                            <li><a href="https://wa.me/77711714427"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href=""><i class="fab fa-telegram-plane"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                        <div class="navbar-collapse collapse" id="responsive-navbar-nav">
+                            <div class="mr-auto navbar-nav">
+                                <div class="nav-item dropdown">
+                                    <a data-bs-toggle="dropdown" aria-expanded="false" id="collasible-nav-dropdown" class="dropdown-toggle nav-link" role="button">Выбрать язык</a>
+                                    <div aria-labelledby="collasible-nav-dropdown" class="dropdown-menu" style="margin: 0px;">
+                                        <a href="#" class="dropdown-item" role="button">Kaz</a>
+                                        <div class="dropdown-divider" role="separator"></div>
+                                        <a href="#" class="dropdown-item" role="button">Rus</a>
+                                        <div class="dropdown-divider" role="separator"></div>
+                                        <a href="#" class="dropdown-item" role="button">Eng</a>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <div class="navbar-collapse collapse" id="responsive-navbar-nav">
+                <div class="mr-auto navbar-nav">
+                    <div class="nav-item mainMenu dropdown">
+                        <a data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuLink" class="dropdown-toggle nav-link" role="button">Все категории</a>
+                        <div aria-labelledby="dropdownMenuLink" class="dropdown-menu"><div class="mega-menu"><ul><li class="menu-item menu-1"><a href="">Вертикальное меню</a><div class="mega-submenu"><h3>Вертикальное меню 1</h3><div class="submenu-content"><div class="section links"><ul><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li></ul></div><div class="section featured-product"><div class="product-detail"><div class="badge">Featured</div><img alt="image" src="https://lab.devaradise.com/codepen-assets/featured-product.jpg" class="thumb"><div class="product-desc"><a href="">Wellness Echinaciae + Vit C isi 30</a></div></div></div><div class="section promotions"><a href=""><img alt="image" src="https://lab.devaradise.com/codepen-assets/promo-1.jpg" class="thumb"></a><a href=""><img alt="image" src="https://lab.devaradise.com/codepen-assets/promo-2.jpg" class="thumb"></a></div></div></div></li><li class="menu-item menu-1"><a href="">Вертикальное меню</a><div class="mega-submenu"><h3>Вертикальное меню 2</h3><div class="submenu-content"><div class="section links"><ul><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li></ul></div><div class="section featured-product"><div class="product-detail"><div class="badge">Featured</div><img alt="image" src="https://lab.devaradise.com/codepen-assets/featured-product.jpg" class="thumb"><div class="product-desc"><a href="">Wellness Echinaciae + Vit C isi 30</a></div></div></div><div class="section promotions"><a href=""><img alt="image" src="https://lab.devaradise.com/codepen-assets/promo-1.jpg" class="thumb"></a><a href=""><img alt="image" src="https://lab.devaradise.com/codepen-assets/promo-2.jpg" class="thumb"></a></div></div></div></li><li class="menu-item menu-1"><a href="">Вертикальное меню</a><div class="mega-submenu"><h3>Вертикальное меню 3</h3><div class="submenu-content"><div class="section links"><ul><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li></ul></div><div class="section featured-product"><div class="product-detail"><div class="badge">Featured</div><img alt="image" src="https://lab.devaradise.com/codepen-assets/featured-product.jpg" class="thumb"><div class="product-desc"><a href="">Wellness Echinaciae + Vit C isi 30</a></div></div></div><div class="section promotions"><a href=""><img alt="image" src="https://lab.devaradise.com/codepen-assets/promo-1.jpg" class="thumb"></a><a href=""><img alt="image" src="https://lab.devaradise.com/codepen-assets/promo-2.jpg" class="thumb"></a></div></div></div></li><li class="menu-item menu-1"><a href="">Вертикальное меню</a><div class="mega-submenu"><h3>Вертикальное меню 4</h3><div class="submenu-content"><div class="section links"><ul><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li></ul></div><div class="section featured-product"><div class="product-detail"><div class="badge">Featured</div><img alt="image" src="https://lab.devaradise.com/codepen-assets/featured-product.jpg" class="thumb"><div class="product-desc"><a href="">Wellness Echinaciae + Vit C isi 30</a></div></div></div><div class="section promotions"><a href=""><img alt="image" src="https://lab.devaradise.com/codepen-assets/promo-1.jpg" class="thumb"></a><a href=""><img alt="image" src="https://lab.devaradise.com/codepen-assets/promo-2.jpg" class="thumb"></a></div></div></div></li><li class="menu-item menu-1"><a href="">Вертикальное меню</a><div class="mega-submenu"><h3>Вертикальное меню 5</h3><div class="submenu-content"><div class="section links"><ul><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li></ul></div><div class="section featured-product"><div class="product-detail"><div class="badge">Featured</div><img alt="image" src="https://lab.devaradise.com/codepen-assets/featured-product.jpg" class="thumb"><div class="product-desc"><a href="">Wellness Echinaciae + Vit C isi 30</a></div></div></div><div class="section promotions"><a href=""><img alt="image" src="https://lab.devaradise.com/codepen-assets/promo-1.jpg" class="thumb"></a><a href=""><img alt="image" src="https://lab.devaradise.com/codepen-assets/promo-2.jpg" class="thumb"></a></div></div></div></li><li class="menu-item menu-1"><a href="">Вертикальное меню</a><div class="mega-submenu"><h3>Вертикальное меню 6</h3><div class="submenu-content"><div class="section links"><ul><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li></ul></div><div class="section featured-product"><div class="product-detail"><div class="badge">Featured</div><img alt="image" src="https://lab.devaradise.com/codepen-assets/featured-product.jpg" class="thumb"><div class="product-desc"><a href="">Wellness Echinaciae + Vit C isi 30</a></div></div></div><div class="section promotions"><a href=""><img alt="image" src="https://lab.devaradise.com/codepen-assets/promo-1.jpg" class="thumb"></a><a href=""><img alt="image" src="https://lab.devaradise.com/codepen-assets/promo-2.jpg" class="thumb"></a></div></div></div></li><li class="menu-item menu-1"><a href="">Вертикальное меню</a><div class="mega-submenu"><h3>Вертикальное меню 7</h3><div class="submenu-content"><div class="section links"><ul><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li><li><a href="">Субменю</a></li></ul></div><div class="section featured-product"><div class="product-detail"><div class="badge">Featured</div><img alt="image" src="https://lab.devaradise.com/codepen-assets/featured-product.jpg" class="thumb"><div class="product-desc"><a href="">Wellness Echinaciae + Vit C isi 30</a></div></div></div><div class="section promotions"><a href=""><img alt="image" src="https://lab.devaradise.com/codepen-assets/promo-1.jpg" class="thumb"></a><a href=""><img alt="image" src="https://lab.devaradise.com/codepen-assets/promo-2.jpg" class="thumb"></a></div></div></div></li></ul></div></div>
+                    </div>
+                    <a href="#" data-rb-event-key="#" class="nav-link" role="button">Услуги</a><a href="#" data-rb-event-key="#" class="nav-link" role="button">Производство</a><a href="#" data-rb-event-key="#" class="nav-link" role="button">О Компании</a><a href="#" data-rb-event-key="#" class="nav-link" role="button">Сертификаты</a><a href="Price-KazMetallStal.pdf" data-rb-event-key="Price-KazMetallStal.pdf" class="nav-link">Прайс-лист</a><a href="#" data-rb-event-key="#" class="nav-link" role="button">Реквизиты</a><a href="#" data-rb-event-key="#" class="nav-link" role="button">Контакты</a>
+                </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- BODY Started here !!! -->
+    <section>
+        <div class="container">
+            <h2>О компании</h2>
+            <p><strong>ТОО «КazМеtаllStal-Almaty»</strong>&nbsp;предлагает своим клиентам огромный ассортимент продукции из металлов и сплавов по самым выгодным ценам. Мы реализуем собственную продукцию, а также являемся представителями ведущих российских заводов.</p>
+
+            <p>Благодаря налаженным отношениям с поставщиками и собственному производству, мы получаем возможность предложить своим клиентам самые выгодные цены на металлопрокат высочайшего качества.</p>
+            
+            <p>Также, одним из преимуществ Компании является то, что мы осуществляем оперативную доставку заказов любых размеров в любую точку Казахстана, Узбекистана и Кыргызстана.</p>
+            
+            <p>В каталоге нашего интернет-магазина вы найдете огромный ассортимент всех популярных видов металлического проката: черный, цветной, чугунный, нержавеющий. Помимо этого, у нас вы сможете приобрести специальные стали, изоляцию труб, сварочные материалы и кабели. Вся продукция сертифицирована.</p>
+            
+            <p>Мы сотрудничаем с крупнейшими строительными компаниями страны. Наша компания всегда рада новым партнерам и готова предложить уникальные условия совместной работы.</p>
+            
+            <p>Наши специалисты всегда готовы ответить на ваши вопросы и оказать помощь в поиске необходимой продукции металлопроката.</p>
+            
+            <p><strong>Работая с ТОО «Kazmetallstal-Almaty» Вы имеете ряд преимуществ:</strong></p>
+            
+            <ul>
+                <li>Бесплатная доставка по городу Алматы.</li>
+                <li>Оперативная доставка во все регионы Казахстана и СНГ.</li>
+                <li>Индивидуальное ценообразование и условия оплаты.</li>
+                <li>Высококвалифицированные специалисты в области металлопроката с опытом работы более 10 лет на рынке металлопроката.</li>
+                <li>Постоянным клиентам Компании предлагаются особые условия оплаты и работы в целом.</li>
+                <li>Регулярный внутренний контроль над скоростью обслуживания (выписка счета, заключение договоров, времени погрузки и доставки).</li>
+            </ul>
+            
+            <p>&nbsp;</p>
+            
+            <h3>ВИДЫ МЕТАЛЛОПРОКАТА В ТОО «KAZMETALLSTAL-ALMATY»</h3>
+            
+            <p>Сортамент металлопроката представлен двумя группами:</p>
+            
+            <ul>
+                <li>Листовой представляет собой металлические листы и рулоны горячей и холодной прокатки;</li>
+                <li>Сортовой металлопрокат может быть простой (квадрат, круг) или фасонной формы (рельсы, трубы, швеллер).</li>
+            </ul>
+            
+            <p>Самые популярные разновидности металлопрокатной продукции представлены на производстве следующими наименованиями:</p>
+            
+            <p><strong>Трубы</strong>&nbsp;– полный металлопрокат с разными сечениями, используется в строительстве, возведении нефтепроводов, водоснабжении и других отраслях промышленности.<br>
+            <strong>Арматура</strong>&nbsp;– изготавливается из углеродистой или низколегированной стали, благодаря высокой прочности, используется в строительстве железобетонных конструкций.<br>
+            <strong>Профнастил</strong>&nbsp;– представляет собой тонкие ребристые листы, может быть стеновым, несущим и кровельным.<br>
+            <strong>Балки</strong>&nbsp;– металлопрокат в форме брусьев, по аналогии с арматурой, производится из углеродистой стали.<br>
+            <strong>Стальные листы</strong>&nbsp;– металлические пластины горячей либо холодной прокатки, толщина может быть самая разная.<br>
+            <strong>Швеллеры</strong>&nbsp;– металлопрокат с сечением в форме буквы «П» используется в процессе строительства несущих опор, в изготовлении станков, машин, мостов и т.д.</p>
+            
+            <p>&nbsp;</p>
+            
+            <h3>ОБЛАСТИ ПРИМЕНЕНИЯ МЕТАЛЛОПРОКАТА</h3>
+            
+            <p>Сферы, в которых применяется металлопрокатная продукция, очень обширны в том или ином виде он присутствует практически во всех областях производства, например,<br>
+            <strong>Машиностроение</strong>&nbsp;– основной потребитель мирового металла.<br>
+            <strong>Газо- и водоснабжение</strong>&nbsp;– на добывающих платформах, в трубопроводах, в специальных цистернах для хранения продукции.<br>
+            <strong>Дорожные работы</strong>&nbsp;– ограждающие конструкции, рельсы.<br>
+            <strong>Строительство</strong>&nbsp;– несущие конструкции, крепления, трубопроводы, строительные элементы.<br>
+            <strong>Системы отопления и вентиляции</strong>&nbsp;– металлические коробы, трубы, радиаторы.</p>
+            
+            <p>Наша компания готова предложить выгодные условия доставки по всей территории Казахстана, Узбекистана и Кыргызстана.</p>
+            
+            <p>Компания обладает собственной складской территорией. Сотрудники компании обладают высокой квалификацией и ведут полный цикл процесса организации доставки: от отгрузки до прибытия товара в пункт назначения, достигая высокого качества обслуживания клиентов, благодаря своему опыту и ответственности, а также проявляя желание на дальнейшее долгосрочное и взаимовыгодное сотрудничество.</p>
+            
+            <p>&nbsp;</p>
+            
+            <h3>ФИЛОСОФИЯ ЛОГОТИПА ТОО «KAZMETALLSTAL-ALMATY»</h3>
+            
+            <p><strong>Огненный феникс</strong></p>
+            
+            <p><img alt="" src="http://metaloprokat.kz/images/logo.png" style="height:200px; width:200px"></p>
+            
+            <p>Символами Феникса являются огонь и лето. Птице требуется свободное пространство, чтобы беспрепятственно подниматься в небо. Она поднимается высоко и летит, высматривая вдали опасности и узнавая о новостях. Эти ее свойства соответствуют способности человека с помощью чувств получать информацию о своем окружении и о том, что происходит вокруг него. Также, она отвечает за нашу изворотливость и предусмотрительность. Вдобавок ко всему, благодаря своей красоте, она побуждает к действиям.</p>
+            
+            <p>Феникс живет на юге и символизирует славу, популярность, реализацию наших идей, наше доброе имя. Феникс одновременно несет с собой еще и мудрость, процветание и красоту.</p>
+            
+            <p><strong>Красный цвет логотипа</strong>&nbsp;является интенсивным тоном, который посылает очень сильные эмоции. Он используется для привлечения внимания, при этом символика его очень разнообразна – в основном к любви и страсти. Помимо всего прочего, красный цвет призван вызывать стимул к действию, Компании, которые используют красный цвет в логотипе, показывают свою силу, драйв и энергичность, в тоже самое время, стимулируя активность в эмоциональном настрое.</p>
+            
+            <p><strong>Название компании «Kazmetallstal-Almaty»</strong>&nbsp;связано с тем, что Казахстан – один из богатейших регионов мира. Полезные ископаемые представлены практически всеми элементами таблицы Менделеева. Республика Казахстан занимает первое место в мире по разведанным запасам цинка, вольфрама и барита, второе место – по запасам серебра, свинца и хромитов, третье – по меди и флюорита, четвертое – по молибдену и шестое – по золоту. Штаб-квартира ТОО «Kazmetallstal-Almaty» расположена в Республике Казахстан, город Алматы.</p>
+            
+            <p>Исходя из всего перечисленного, мы получили уникальное название «Kazmetallstal-Almaty».</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                <a title="Logo" class="logo scroll" href=""><a href="" class="mb-3 navbar-brand">metaloprokat.kz</a></a>
+                <p>Текст под лого</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <ul class="mr-4">
+                            <li><a href="">Меню</a></li>
+                            <li><a href="">Меню</a></li>
+                            <li><a href="">Меню</a></li>
+                            <li><a href="">Меню</a></li>
+                            <li><a href="">Меню</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <ul class="mr-4">
+                            <li><a href="">Меню</a></li>
+                            <li><a href="">Меню</a></li>
+                            <li><a href="">Меню</a></li>
+                            <li><a href="">Меню</a></li>
+                            <li><a href="">Меню</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div ex="6" class="text-left col-lg-6 col-md-6 col-sm-6">
+                <p>© 2021 metaloprokat.kz</p>
+                </div>
+                <div ex="6" class="text-right col-lg-6 col-md-6 col-sm-6">
+                <p>Разработка сайта <a href="https://tero.kz/">tero.kz</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Выберите город</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                <span class="sr-only">Close</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li><a href="">Актау</a></li>
+                    <li><a href="">Актобе</a></li>
+                    <li><a href="">Алматы</a></li>
+                    <li><a href="">Атырау</a></li>
+                    <li><a href="">Нур-Султан</a></li>
+                    <li><a href="">Алматы</a></li>
+                    <li><a href="">Алматы</a></li>
+                    <li><a href="">Алматы</a></li>
+                    </ul>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Обратный звонок</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                <span class="sr-only">Close</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <input name="last-name" placeholder="Имя" type="text">
+                        <input name="phone" placeholder="Телефон" type="text">
+                        <button type="submit" class="btn btn-primary">отправить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
